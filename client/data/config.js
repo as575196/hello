@@ -8,5 +8,7 @@ export function logException(ex, context) {
   Raven.captureException(ex, {
     extra: context
   });
-  if(window && window.console) {console.error && console.error(ex)};
+  if (window && window.console) {
+    console.error && console.error(ex);
+  }
 }
